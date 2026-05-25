@@ -1,0 +1,7 @@
+<!doctype html><html><head><meta charset="utf-8"><title>FocusGuard</title><link rel="stylesheet" href="assets.css"></head><body><div class="wrap">
+  <div class="brand"><div class="logo">FG</div><div><h1>FocusGuard</h1><p>Screen-time blocker + AI coach</p></div></div>
+  <div class="card row"><div><b>Protection</b><p class="muted">Block distracting sites instantly</p></div><label class="switch"><input id="enabled" type="checkbox"><span class="slider"></span></label></div>
+  <div class="card"><div class="row"><h3>Today</h3><span class="pill" id="score">Score 0</span></div><div class="grid" style="margin-top:12px"><div class="metric"><b id="hours">0h</b><span>screen time</span></div><div class="metric"><b id="blocked">0</b><span>blocked sites</span></div></div></div>
+  <div class="card"><h3>Study / Work Mode</h3><div class="timer" id="timer">25:00</div><div class="grid"><button class="btn" id="start25">Start 25m</button><button class="btn secondary" id="stop">Stop</button></div></div>
+  <div class="card"><div class="row"><h3>Quick block list</h3><button class="btn secondary" id="dashboard">Dashboard</button></div><div id="sites" style="margin-top:10px"></div><div class="row" style="margin-top:12px"><input class="input" id="newSite" placeholder="e.g. linkedin.com"><button class="btn" id="addSite">Add</button></div></div>
+</div><script src="popup.js"></script></body></html>
