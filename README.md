@@ -1,31 +1,112 @@
-# FocusGuard — Chrome Extension MVP
+# 🛡️ FocusGuard — AI Screen Time Coach
 
-A complete Manifest V3 Chrome extension for blocking distracting websites, tracking screen time locally, running Pomodoro/deep-work mode, parent controls, and AI-style weekly focus coaching.
+**FocusGuard** is a modern Chrome extension that helps users defeat digital distractions, block addictive websites, track daily screen time, and build deep-work habits with a clean, startup-style dashboard.
 
-## Features
-- One-click blocking for YouTube, Instagram, Reddit, X, Facebook, Netflix
-- Custom block list
-- Local daily screen-time dashboard
-- Pomodoro / deep work focus mode
-- Motivational blocked page
-- Parent controls MVP: PIN, child mode toggle, daily limit setting
-- AI-style weekly focus score/report generated locally
-- No external server required
+> You don’t need more time. You need control.
 
-## Install locally
-1. Open Chrome and go to `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Click **Load unpacked**.
-4. Select the `focusguard-extension` folder.
-5. Pin FocusGuard from the extensions menu.
+---
 
-## Production upgrade ideas
-- Add cloud accounts for parent-child sync.
-- Replace local AI report with OpenAI/Claude/Gemini API via secure backend.
-- Add schedules: block sites from 9 AM–12 PM and 6 PM–9 PM.
-- Add encrypted PIN reset and tamper protection.
-- Add Stripe/Razorpay subscriptions for Pro plan.
+## 🚀 What is FocusGuard?
 
-## Suggested pricing
-- Free: blocking, Pomodoro, today dashboard
-- Pro $4.99/month: AI reports, parent dashboard, schedules, multi-device sync
+FocusGuard is a productivity-focused Chrome extension built for:
+
+- Students preparing for exams
+- Developers doing deep work
+- Employees avoiding social media distractions
+- Parents managing children’s browsing habits
+- Anyone who wants to reduce screen addiction
+
+It blocks distracting websites, tracks time spent online, shows a daily focus score, and gives an AI-style productivity report.
+
+---
+
+## ✨ Key Features
+
+### 🔒 Website Blocking
+Block distracting websites like:
+
+- YouTube
+- Instagram
+- Reddit
+- X / Twitter
+- Facebook
+- Netflix
+- Any custom website
+
+### 📊 Screen Time Dashboard
+Track how much time you spend on each website every day.
+
+### 🧠 AI-Style Focus Coach
+Get a personalized focus score and improvement report based on your browsing habits.
+
+### ⏱️ Pomodoro / Deep Work Mode
+Start focused work sessions directly from the extension popup.
+
+### 👨‍👩‍👧 Parent Controls
+Basic parent mode with:
+
+- Daily limit setting
+- Child mode toggle
+- PIN field
+
+### 💬 Motivational Blocked Page
+Instead of showing a boring blank page, FocusGuard displays motivational messages when a site is blocked.
+
+### 🔐 Privacy First
+FocusGuard stores data locally using Chrome Storage. No external tracking server is required.
+
+---
+
+## 🖼️ Product Preview
+
+### Extension Popup
+Clean, modern popup for quick control.
+
+### Dashboard
+Interactive dashboard with:
+
+- Focus score
+- Today’s screen time
+- Top visited website
+- Blocked site list
+- AI-style weekly report
+- Parent controls
+
+### Blocked Page
+A beautiful distraction-blocking page with motivational quotes.
+
+---
+
+## 🛠️ Tech Stack
+
+- Chrome Extension Manifest V3
+- JavaScript
+- HTML5
+- CSS3
+- Chrome Storage API
+- Chrome Tabs API
+- Chrome Alarms API
+- Chrome Notifications API
+- Chrome Idle API
+
+---
+
+## 📁 Project Structure
+
+```bash
+FocusGuard/
+│
+├── manifest.json
+├── background.js
+├── popup.html
+├── popup.js
+├── dashboard.html
+├── dashboard.js
+├── blocked.html
+├── blocked.js
+├── assets.css
+│
+└── icons/
+    ├── icon16.png
+    ├── icon48.png
+    └── icon128.png
